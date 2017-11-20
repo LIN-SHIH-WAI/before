@@ -1,0 +1,29 @@
+info='THis var will be printed out.....'
+
+name = input('Please input your name： ')
+job = input('Job: ')
+salary = input('Salary: ')
+real_age=29
+for i in range(10):
+	age=int(input('age:'))
+	if age > 29:
+		msg='think smaller'
+	elif age==29:
+		msg='color'
+		break
+	else:
+		msg='think bigger'
+	print(msg)
+	print('you still %s more shots' %(9-i))
+print ('''
+personal information of %s:
+	Name: %s
+	Age : %s
+	Job : %s
+	Salary : %s
+-----------------------------
+%s
+''' % (name,name ,age,job,salary,msg))
+
+print(type(age))
+

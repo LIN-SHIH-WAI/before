@@ -1,0 +1,16 @@
+info='THis var will be printed out.....'
+
+name = input('Please input your name： ')
+age = int(input('age: '))
+job = input('Job: ')
+salary = input('Salary: ')
+print ('''
+personal information of %s:
+	Name: %s
+	Age : %s
+	Job : %s
+	Salary : %s
+-----------------------------
+''' % (name,name ,age,job,salary))
+
+print(type(age))

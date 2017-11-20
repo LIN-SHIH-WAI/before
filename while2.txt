@@ -1,0 +1,12 @@
+#循环到第几次做一个打印
+#对变量赋值
+count=0
+x=int(input('which number you do want to stop: '))
+#如果count小于 就一直加
+while count<x:
+	#print('loop:',count)
+	count +=1
+#如果满足了就执行下面这个
+else:
+#注意格式print('loop:',count) 后面一定要加,表示分割。同时要注意大小写
+	print('loop:',count)

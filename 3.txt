@@ -1,0 +1,24 @@
+info='THis var will be printed out.....'
+
+name = input('Please input your name： ')
+age = int(input('age: '))
+job = input('Job: ')
+salary = input('Salary: ')
+if age>40:
+	msg='you are over 40 years old'
+elif age>30:
+	msg='you are over 30 years old'
+else:
+	msg='you are under 30 years old'
+print ('''
+personal information of %s:
+	Name: %s
+	Age : %s
+	Job : %s
+	Salary : %s
+-----------------------------
+%s
+''' % (name,name ,age,job,salary,msg))
+
+print(type(age))
+

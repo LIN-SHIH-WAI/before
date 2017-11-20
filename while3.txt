@@ -1,0 +1,30 @@
+#循环到第几次做一个打印
+#对变量赋值
+count=0
+#x需要用Int改成数字模式要不无法执行
+x=int(input('which number you do want to stop: '))
+#如果count小于 就一直加
+while count<100000:
+	#print('loop:',count)
+	#注意这里要加: 先判断X是不是到达
+	if count==x:
+		print('there you got the unmber:',count) 
+	#加入你要不要继续
+		choice =input('do you wan to continue the loop?(y/n)')
+	#注意在后面要加:还有缩进格式
+		if choice == 'n':
+			#break是跳出整个循环
+			break
+	#跳出循环 注意这里再缩进
+		
+	#另一个结果用else集合的补集
+		#'''else 加这个完全是多此一举
+			#continue是跳出当此的循环.下面的不走了继续往前走
+			#countnue'''
+		else:
+			print('loop:',count)
+		count+=1
+	
+#如果满足了就执行下面这个
+#注意格式print('loop:',count) 后面一定要加,表示分割。同时要注意大小写
+	#print('loop:',count)
